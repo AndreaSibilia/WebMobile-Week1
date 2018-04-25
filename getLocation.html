@@ -8,8 +8,8 @@ function getLocation(){
 	alert('gettin location');
 	navigator.geolocation.getCurrentPosition(getPosition);
 }
-function getPosition(){
-	dovument.getElementById('show location').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + postion.coords.longitude;
+function getPosition(position){
+	document.getElementById('show location').innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
 }
 </script>	
 </head>
